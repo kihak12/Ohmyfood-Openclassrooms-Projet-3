@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
 *,::before,::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Space Mono', monospace;
-    cursor: default;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  cursor: default;
 }
 
-.center {
-    margin: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: white;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Shrikhand', serif;
+}
+
+:root {
+  --main-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+  --main-bg-color: #f6f6f6;
+  --filter-bg-color: #DEEBFF;
 }
