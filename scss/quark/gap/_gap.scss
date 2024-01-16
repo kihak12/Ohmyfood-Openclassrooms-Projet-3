@@ -1,0 +1,19 @@
+@mixin q-gap-size($size) {
+  $pixel-size: $size * 1px;
+
+  &.-gap#{$size} {
+    gap: $pixel-size;
+  }
+}
+
+@mixin q-gap-sizes {
+  $gap-sizes: 17, 40;
+
+  @each $gap-size in $gap-sizes {
+    @include q-gap-size($gap-size);
+  }
+}
+
+@mixin q-gap {
+  @include q-gap-sizes;
+}

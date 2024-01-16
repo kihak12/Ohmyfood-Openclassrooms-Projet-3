@@ -1,0 +1,46 @@
+.flex {
+  @include q-gap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.-column {
+    flex-direction: column;
+  }
+
+  &.-row {
+    flex-direction: row;
+  }
+
+  &.-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.-top {
+    align-items: flex-start;
+  }
+
+  &.-middle {
+    align-items: center;
+  }
+
+  &.-bottom {
+    align-items: flex-end;
+  }
+
+  &.-baseline {
+    align-items: baseline;
+  }
+
+  &.-center {
+    justify-content: center;
+  }
+
+  &.-left {
+    justify-content: flex-start;
+  }
+
+  &.-right {
+    justify-content: flex-end;
+  }
+}

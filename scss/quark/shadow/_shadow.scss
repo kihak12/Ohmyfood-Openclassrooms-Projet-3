@@ -1,0 +1,7 @@
+@mixin q-shadow {
+  box-shadow: 0 4px 10px 0 $global-fill-color-shadow;
+}
+
+@mixin q-light-shadow {
+  box-shadow: 0 2px 4px 0 $global-fill-color-light-shadow;
+}

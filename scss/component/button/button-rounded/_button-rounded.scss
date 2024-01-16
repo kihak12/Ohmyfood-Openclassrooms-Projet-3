@@ -1,0 +1,34 @@
+$button-rounded-color-background-primary: $global-main-color;
+$button-rounded-color-background-secondary: $global-secondary-color;
+$button-rounded-color-text: $global-text-color-shade-100 !default;
+
+$button-rounded-font-family: $global-sans-primary-font-family !default;
+$button-rounded-font-size: $global-font-size !default;
+$button-rounded-border-size: 2px !default;
+$button-rounded-padding: 16px !default;
+$button-rounded-height: 50px !default;
+$button-rounded-border-radius: 25px !default;
+
+$button-rounded-line-height: $button-rounded-height - ($button-rounded-border-size * 2);
+
+.button-rounded {
+  @include q-shadow;
+  border: none;
+  outline: none;
+  background: linear-gradient(193.33deg, $button-rounded-color-background-primary -11.44%, $button-rounded-color-background-secondary 123.93%);
+  color: $button-rounded-color-text;
+  border-radius: $button-rounded-border-radius;
+  padding: 0 $button-rounded-padding;
+  height: $button-rounded-height;
+  line-height: $button-rounded-line-height;
+  font-family: $button-rounded-font-family;
+  font-size: $button-rounded-font-size;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s;
+  width: fit-content;
+
+  &:hover {
+    background: linear-gradient(200.64deg, $button-rounded-color-background-primary -5.2%, $button-rounded-color-background-primary 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  }
+}

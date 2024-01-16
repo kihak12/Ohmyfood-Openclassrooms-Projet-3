@@ -1,0 +1,21 @@
+@mixin q-text-size($size) {
+  $pixel-size: $size * 1px;
+
+  &.-ts#{$size} {
+    font-size: $pixel-size;
+  }
+}
+
+@mixin q-text-sizes {
+  $text-sizes: 13, 14, 18, 24, 30, 48;
+
+  @each $text-size in $text-sizes {
+    @include q-text-size($text-size);
+  }
+}
+
+@mixin q-text {
+  @include q-text-sizes;
+  font-size: 16px;
+  font-weight: 500;
+}

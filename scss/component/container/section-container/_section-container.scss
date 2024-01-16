@@ -1,0 +1,7 @@
+.section-container {
+  background-color: $global-main-bg-color;
+
+  &.-light {
+    background-color: $global-fill-color-shade-100;
+  }
+}

@@ -1,0 +1,5 @@
+.location-field {
+  @include q-text;
+  height: 50px;
+  background-color: $global-fill-color-shade-40;
+}

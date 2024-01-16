@@ -1,0 +1,16 @@
+$root-color-text: $global-text-color-shade-10 !default;
+$root-font-family: $global-sans-primary-font-family !default;
+$root-font-size: $global-font-size !default;
+
+:root {
+  color: $root-color-text;
+  font-family: $root-font-family;
+  font-size: $root-font-size;
+}
+
+*,::before,::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
