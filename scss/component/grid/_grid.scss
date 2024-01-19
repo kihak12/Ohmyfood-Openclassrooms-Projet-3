@@ -1,0 +1,5 @@
+.grid {
+  @include q-gap;
+  @include q-grid-template-column;
+  display: grid;
+}

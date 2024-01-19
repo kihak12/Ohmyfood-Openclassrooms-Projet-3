@@ -1,0 +1,40 @@
+@mixin q-padding($spacing) {
+  $spacing-width: $spacing * 1px;
+
+  &.-s#{$spacing} {
+    padding: $spacing-width;
+  }
+
+  &.-v#{$spacing} {
+    padding-top: $spacing-width;
+    padding-bottom: $spacing-width;
+  }
+
+  &.-h#{$spacing} {
+    padding-right: $spacing-width;
+    padding-left: $spacing-width;
+  }
+}
+
+@mixin q-paddings {
+  $paddings: 10, 15, 30, 40, 50, 70;
+
+  @each $padding in $paddings {
+    @include q-padding($padding);
+  }
+}
+
+@mixin q-grow($grow) {
+  &.-g#{$grow} {
+    flex-basis: 0;
+    flex-grow: $grow;
+  }
+}
+
+@mixin q-grows {
+  $grows: 1, 2, 3, 4, 5, 6;
+
+  @each $grow in $grows {
+    @include q-grow($grow);
+  }
+}

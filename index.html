@@ -26,33 +26,97 @@
             <span>Paris, Belleville</span>
         </div>
         <section class="section-container">
-            <div class="section-content flex -column -center -middle -gap40">
-                <h1 class="section-title">Réservez le menu qui vous convient</h1>
-                <span>Découvrez des restaurants d’exception, sélectionnés par nos soins.</span>
+            <div class="section-content -s30 flex -column -center -middle -gap30">
+                <h1 class="section-title -g1">Réservez le menu qui vous convient</h1>
+                <span class="text -dark-light">Découvrez des restaurants d’exception, sélectionnés par nos soins.</span>
                 <button class="button-rounded">Explorer nos restaurants</button>
             </div>
         </section>
         <section class="section-container -light">
-            <div class="section-content flex -column -center -middle -gap40">
+            <div class="section-content -s50 flex -column -center -gap20">
                 <h2 class="section-sub-title">Fonctionnement</h2>
+                <div class="flex -row -gap40">
+                    <div class="card-info -g1">
+                        <span class="card-number">1</span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>Choisissez un restaurant</span>
+                    </div>
+                    <div class="card-info -g1">
+                        <span class="card-number">2</span>
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span>Composez votre menu</span>
+                    </div>
+                    <div class="card-info -g1">
+                        <span class="card-number">3</span>
+                        <i class="fa-solid fa-store"></i>
+                        <span>Dégustez au restaurant</span>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section-container">
-            <div class="section-content flex -column -center -middle -gap40">
+            <div class="section-content -s40 flex -wrap -center -column -gap40">
                 <h2 class="section-sub-title">Restaurants</h2>
-                <article>
-                    <img src="" alt="">
-                    <div>
-                        <h3>La palette du goût</h3>
-                        <span>Ménilmontant</span>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                </article>
-                <article></article>
-                <article></article>
-                <article></article>
+                <div class="card-container grid -c2 -gap17-40">
+                    <a href="/restaurants/la_palette_du_gout.html">
+                        <article class="card">
+                            <div class="card-image">
+                                <span class="image-flag">Nouveau</span>
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-content flex -middle -between">
+                                <div class="flex -column -gap5">
+                                    <h3>La palette du goût</h3>
+                                    <span class="text -card-title">Ménilmontant</span>
+                                </div>
+                                <input class="heart-icon" type="checkbox">
+                            </div>
+                        </article>
+                    </a>
+                    <a href="/restaurants/la_palette_du_gout.html">
+                        <article class="card">
+                            <div class="card-image">
+                                <span class="image-flag">Nouveau</span>
+                                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-content flex -middle -between">
+                                <div class="flex -column -gap5">
+                                    <h3>La note enchantée</h3>
+                                    <span class="text -card-title">Charonne</span>
+                                </div>
+                                <input class="heart-icon" type="checkbox" checked>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="/restaurants/la_palette_du_gout.html">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-content flex -middle -between">
+                                <div class="flex -column -gap5">
+                                    <h3>À la française</h3>
+                                    <span class="text -card-title">Cité Rouge</span>
+                                </div>
+                                <input class="heart-icon" type="checkbox">
+                            </div>
+                        </article>
+                    </a>
+                    <a href="/restaurants/la_palette_du_gout.html">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                            </div>
+                            <div class="card-content flex -middle -between">
+                                <div class="flex -column -gap5">
+                                    <h3>Le délice des sens</h3>
+                                    <span class="text -card-title">Folie-Méricourt</span>
+                                </div>
+                                <input class="heart-icon" type="checkbox">
+                            </div>
+                        </article>
+                    </a>
+                </div>
             </div>
         </section>
 

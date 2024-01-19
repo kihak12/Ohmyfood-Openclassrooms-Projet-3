@@ -1,5 +1,6 @@
 .section-content {
+  @include q-paddings;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1080px;
   margin: auto;
 }

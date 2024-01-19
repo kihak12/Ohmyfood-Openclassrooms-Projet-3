@@ -1,5 +1,6 @@
 .flex {
   @include q-gap;
+  @include q-grows;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -42,5 +43,13 @@
 
   &.-right {
     justify-content: flex-end;
+  }
+
+  &.-between {
+    justify-content: space-between
+  }
+
+  > * {
+    @include q-grows;
   }
 }

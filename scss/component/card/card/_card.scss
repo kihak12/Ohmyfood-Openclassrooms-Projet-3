@@ -1,0 +1,37 @@
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  background: $global-color-white;
+  transition: box-shadow .4s;
+
+  .card-image {
+    position: relative;
+    display: flex;
+
+    .image-flag {
+      position: absolute;
+      background: $global-color-green;
+      color: $global-text-color-green;
+      padding: 7px 12px;
+      border-radius: 2px;
+      font-size: 14px;
+      line-height: 16px;
+      top: 13px;
+      right: 13px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;;
+      max-height: 200px;
+    }
+  }
+
+  .card-content {
+    padding: 17px 20px;
+  }
+
+  &:hover {
+    @include q-card-shadow;
+  }
+}

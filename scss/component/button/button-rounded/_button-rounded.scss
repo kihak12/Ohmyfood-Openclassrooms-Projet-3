@@ -5,7 +5,7 @@ $button-rounded-color-text: $global-text-color-shade-100 !default;
 $button-rounded-font-family: $global-sans-primary-font-family !default;
 $button-rounded-font-size: $global-font-size !default;
 $button-rounded-border-size: 2px !default;
-$button-rounded-padding: 16px !default;
+$button-rounded-padding: 21px !default;
 $button-rounded-height: 50px !default;
 $button-rounded-border-radius: 25px !default;
 
@@ -15,7 +15,7 @@ $button-rounded-line-height: $button-rounded-height - ($button-rounded-border-si
   @include q-shadow;
   border: none;
   outline: none;
-  background: linear-gradient(193.33deg, $button-rounded-color-background-primary -11.44%, $button-rounded-color-background-secondary 123.93%);
+  background: linear-gradient(180deg, $button-rounded-color-background-secondary -8.44%, $button-rounded-color-background-primary 123.93%);
   color: $button-rounded-color-text;
   border-radius: $button-rounded-border-radius;
   padding: 0 $button-rounded-padding;

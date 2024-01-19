@@ -1,0 +1,50 @@
+@mixin icon-properties {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.heart-icon {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  appearance: none;
+
+  &::before {
+    @include icon-properties;
+    background-image: url('/images/icon/heart.svg');
+    transition: opacity .2s, scale .5s;
+    opacity: 1;
+    scale: 1;
+  }
+
+  &::after {
+    @include icon-properties;
+    background-image: url('/images/icon/heart-colored.svg');
+    transition: opacity .2s, scale .5s;
+    opacity: 0;
+    scale: 0;
+  }
+
+  &:hover::after{
+    opacity: 1;
+    scale: 1;
+  }
+
+  &:hover::before{
+    opacity: 0;
+    scale: 0;
+  }
+
+  &:checked {
+    background-image: url('/images/icon/heart-colored.svg');
+  }
+
+  &:checked::before{
+    opacity: 0;
+  }
+}
