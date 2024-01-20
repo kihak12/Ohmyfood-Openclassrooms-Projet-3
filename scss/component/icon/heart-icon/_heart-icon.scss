@@ -16,7 +16,7 @@
 
   &::before {
     @include icon-properties;
-    background-image: url('./images/icon/heart.svg');
+    background-image: url('/images/icon/heart.svg');
     transition: opacity .2s, scale .5s;
     opacity: 1;
     scale: 1;
@@ -24,7 +24,7 @@
 
   &::after {
     @include icon-properties;
-    background-image: url('./images/icon/heart-colored.svg');
+    background-image: url('/images/icon/heart-colored.svg');
     transition: opacity .2s, scale .5s;
     opacity: 0;
     scale: 0;
@@ -41,7 +41,7 @@
   }
 
   &:checked {
-    background-image: url('./images/icon/heart-colored.svg');
+    background-image: url('/images/icon/heart-colored.svg');
   }
 
   &:checked::before{
