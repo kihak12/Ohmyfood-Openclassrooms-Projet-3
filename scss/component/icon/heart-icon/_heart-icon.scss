@@ -13,6 +13,7 @@
   height: 22px;
   width: 22px;
   appearance: none;
+  cursor: pointer;
 
   &::before {
     @include icon-properties;

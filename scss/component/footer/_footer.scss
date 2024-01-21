@@ -1,0 +1,45 @@
+.footer {
+
+  background-color: $global-fill-color-shade-10;
+  color: $global-text-color-shade-100;
+
+  .footer-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3%;
+    padding: 55px 5% 35px;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+  }
+
+  .footer-illustrated-link {
+    display: flex;
+    gap: 15px;
+    a {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 500;
+    }
+
+    i {
+      font-size: 13px;
+    }
+  }
+
+  .footer-link {
+    display: flex;
+    gap: 15px;
+    font-weight: 400;
+  }
+
+  .footer-logo {
+    font-family: $global-sans-secondary-font-family;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
