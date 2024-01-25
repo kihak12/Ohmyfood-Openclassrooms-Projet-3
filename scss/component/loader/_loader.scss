@@ -7,6 +7,8 @@ $icon-size: clamp(24px, 4vw, 50px) !default;
   width: 100%;
   overflow: hidden;
   background-color: rgb(119, 119, 119, 0.5);
+
+  -webkit-animation: fade 2.5s forwards linear;
   animation: fade 2.5s forwards linear;
   &::before, &::after {
     content: '';
@@ -38,7 +40,7 @@ $icon-size: clamp(24px, 4vw, 50px) !default;
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -62,15 +64,11 @@ $icon-size: clamp(24px, 4vw, 50px) !default;
     transform: rotateZ(360deg);
     right: calc(50% - ($icon-size / 2));
   }
-  99% {
+  100% {
     transform: rotateZ(360deg);
     right: calc(50% - ($icon-size / 2));
     scale: 1.5;
     opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    display: none;
   }
 }
 
@@ -94,14 +92,10 @@ $icon-size: clamp(24px, 4vw, 50px) !default;
     transform: rotateZ(360deg);
     left: calc(50% - ($icon-size / 2));
   }
-  99% {
+  100% {
     transform: rotateZ(360deg);
     left: calc(50% - ($icon-size / 2));
     scale: 1.5;
     opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    display: none;
   }
 }
