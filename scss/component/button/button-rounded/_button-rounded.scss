@@ -25,10 +25,10 @@ $button-rounded-line-height: $button-rounded-height - ($button-rounded-border-si
   font-size: $button-rounded-font-size;
   font-weight: 500;
   cursor: pointer;
-  transition: background .2s;
+  transition: filter .2s;
   width: fit-content;
 
   &:hover {
-    background: linear-gradient(200.64deg, $button-rounded-color-background-primary -5.2%, $button-rounded-color-background-primary 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    filter: brightness(1.1);
   }
 }
