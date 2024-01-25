@@ -1,0 +1,13 @@
+.card-container {
+  @include q-gap;
+  @include q-grid-template-column;
+  display: grid;
+}
+
+@media (max-width: 700px) {
+  .card-container {
+    &.-c2 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

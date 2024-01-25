@@ -53,3 +53,9 @@
     @include q-grows;
   }
 }
+
+@media (max-width: 768px) {
+  .flex {
+    @include q-mobile-gap;
+  }
+}

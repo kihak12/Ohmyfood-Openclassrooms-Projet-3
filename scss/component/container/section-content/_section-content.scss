@@ -4,3 +4,9 @@
   max-width: 1080px;
   margin: auto;
 }
+
+@media (max-width: 768px) {
+  .section-content {
+    @include q-mobile-paddings;
+  }
+}

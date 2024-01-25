@@ -5,9 +5,11 @@
   align-items: center;
   gap: 1.5em;
   padding: 17px 35px;
+  margin-left: 10px;
   background: $global-main-bg-color;
   border-radius: 20px;
   height: 72.38px;
+  min-width: 280px;
 
   i {
     font-size: 19px;

@@ -43,3 +43,23 @@
     font-weight: 400;
   }
 }
+
+@media (max-width: 800px) {
+  .footer {
+    .footer-content {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 30px 5%;
+    }
+    .footer-links, .footer-link {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .footer-illustrated-link {
+      flex-direction: column;
+      gap: 7px;
+    }
+  }
+}

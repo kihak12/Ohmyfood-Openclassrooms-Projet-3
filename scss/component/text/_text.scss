@@ -35,3 +35,11 @@
 .text {
   @include q-text;
 }
+
+@media (max-width: 768px) {
+  .text {
+    &.-mobile-centered {
+      text-align: center;
+    }
+  }
+}

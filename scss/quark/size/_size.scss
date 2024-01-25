@@ -16,11 +16,37 @@
   }
 }
 
+@mixin q-mobile-padding($spacing) {
+  $spacing-width: $spacing * 1px;
+
+  &.-mobile-s#{$spacing} {
+    padding: $spacing-width;
+  }
+
+  &.-mobile-v#{$spacing} {
+    padding-top: $spacing-width;
+    padding-bottom: $spacing-width;
+  }
+
+  &.-mobile-h#{$spacing} {
+    padding-right: $spacing-width;
+    padding-left: $spacing-width;
+  }
+}
+
 @mixin q-paddings {
   $paddings: 10, 15, 30, 40, 50, 70;
 
   @each $padding in $paddings {
     @include q-padding($padding);
+  }
+}
+
+@mixin q-mobile-paddings {
+  $paddings: 10, 15, 20, 30, 40, 50, 70;
+
+  @each $padding in $paddings {
+    @include q-mobile-padding($padding);
   }
 }
 
