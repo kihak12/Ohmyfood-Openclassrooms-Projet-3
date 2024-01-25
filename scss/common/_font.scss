@@ -5,4 +5,7 @@ $global-font-size: 16px !default;
 a {
   text-decoration: none;
   color: inherit;
+  &.prevent-event > input{
+    pointer-events: none;
+  }
 }
