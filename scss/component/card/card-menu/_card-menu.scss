@@ -1,0 +1,18 @@
+@import "card-menu-success/card-menu-success";
+
+.-card-menu {
+  @include q-card-light-shadow;
+
+  &:hover .card-menu-success {
+    width: 59px;
+  }
+
+  .card-menu-description {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

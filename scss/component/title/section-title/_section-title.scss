@@ -4,4 +4,10 @@
   font-weight: 700;
   font-size: clamp(24px, 4vw, 40px);
   text-align: center;
+
+  &.-secondary {
+    font-size: 28px;
+    font-family: $global-sans-secondary-font-family;
+    font-weight: 300;
+  }
 }

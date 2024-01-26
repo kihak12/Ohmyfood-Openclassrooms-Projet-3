@@ -9,3 +9,7 @@
 @mixin q-card-shadow {
   box-shadow: 0 4px 15px 0 $global-fill-color-light-shadow;
 }
+
+@mixin q-card-light-shadow {
+  box-shadow: 0 4px 15px 0 $global-fill-color-light-shadow-10;
+}

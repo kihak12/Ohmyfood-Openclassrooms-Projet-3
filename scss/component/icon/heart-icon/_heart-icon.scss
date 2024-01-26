@@ -9,15 +9,18 @@
 }
 
 .heart-icon {
+  @include q-sizes;
   position: relative;
   height: 22px;
   width: 22px;
   appearance: none;
   cursor: pointer;
+  background-repeat: no-repeat;
 
   &::before {
     @include icon-properties;
     background-image: url('../images/icon/heart.svg');
+    background-repeat: no-repeat;
     transition: opacity .2s, scale .5s;
     opacity: 1;
     scale: 1;
@@ -26,6 +29,7 @@
   &::after {
     @include icon-properties;
     background-image: url('../images/icon/heart-colored.svg');
+    background-repeat: no-repeat;
     transition: opacity .2s, scale .5s;
     opacity: 0;
     scale: 0;

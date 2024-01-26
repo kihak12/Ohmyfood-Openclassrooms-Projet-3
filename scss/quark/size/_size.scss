@@ -64,3 +64,19 @@
     @include q-grow($grow);
   }
 }
+
+
+@mixin q-size($size) {
+  &.-s#{$size} {
+    width: $size * 1px;
+    height: $size * 1px;
+  }
+}
+
+@mixin q-sizes {
+  $sizes: 24;
+
+  @each $size in $sizes {
+    @include q-size($size);
+  }
+}

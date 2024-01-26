@@ -1,5 +1,5 @@
 @mixin q-gap-sizes {
-  $gap-sizes: 5, 17, 20, 30, 40;
+  $gap-sizes: 5, 10, 12, 17, 20, 30, 40;
 
   @each $gap-size in $gap-sizes {
 
