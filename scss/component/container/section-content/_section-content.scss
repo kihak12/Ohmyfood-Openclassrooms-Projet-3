@@ -3,6 +3,19 @@
   width: 100%;
   max-width: 1080px;
   margin: auto;
+
+  &.-grey {
+    background: $global-main-bg-color;
+  }
+
+  &.-index-1 {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.-rounded {
+    border-radius: 25px;
+  }
 }
 
 @media (max-width: 768px) {

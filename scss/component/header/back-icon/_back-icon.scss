@@ -1,0 +1,8 @@
+$back-icon-size : 16px;
+
+.header-back-icon {
+  position: absolute;
+  font-size: $back-icon-size;
+  top: calc(50% - ($back-icon-size / 2));
+  left: 17px;
+}
