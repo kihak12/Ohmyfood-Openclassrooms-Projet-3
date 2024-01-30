@@ -9,4 +9,8 @@
   align-items: center;
   justify-content: center;
   transition: width .4s linear;
+  i {
+    opacity: .2;
+    transition: transform .4s linear, opacity .4s linear;
+  }
 }

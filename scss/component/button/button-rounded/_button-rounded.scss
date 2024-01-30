@@ -27,6 +27,7 @@ $button-rounded-line-height: $button-rounded-height - ($button-rounded-border-si
   cursor: pointer;
   transition: filter .2s;
   width: fit-content;
+  min-width: 185px;
 
   &:hover {
     filter: brightness(1.1);

@@ -1,10 +1,31 @@
 @import "card-menu-success/card-menu-success";
 
+$cards-menu: 8;
+$animation-duration: 0.8s;
+$delay-increment: 0.4s;
+
+.section-content {
+  & .-card-menu {
+    animation: slide-in $animation-duration ease-in forwards;
+
+    @for $card from 1 through $cards-menu {
+      &:nth-child(#{$card}) {
+        animation-delay: $card * $delay-increment;
+      }
+    }
+  }
+}
+
 .-card-menu {
   @include q-card-light-shadow;
+  opacity: 0;
 
   &:hover .card-menu-success {
     width: 59px;
+    i {
+      opacity: 1;
+      transform: rotateZ(-360deg);
+    }
   }
 
   .card-menu-description {
@@ -14,5 +35,30 @@
     gap: 5px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    & > * {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .card-price {
+    margin: 0 15px 10px 0;
+  }
+
+  .section-content {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 10px 0 10px 20px;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
