@@ -1,0 +1,28 @@
+$animation-duration: 0.6s;
+$animation-delay: 0.4;
+
+@mixin animation-delays {
+  $max-length: 10;
+
+  @for $delay from 1 through $max-length {
+    &.-delay-#{$delay} {
+      animation-delay: #{$delay * $animation-delay}s;
+    }
+  }
+}
+.section-content {
+  & .-card-menu {
+    @include animation-delays;
+    animation: slide-in $animation-duration ease-in forwards;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

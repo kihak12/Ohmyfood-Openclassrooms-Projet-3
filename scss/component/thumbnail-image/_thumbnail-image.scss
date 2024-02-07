@@ -6,3 +6,9 @@
     max-height: 383px;
   }
 }
+
+@media (max-width: 768px) {
+  .thumbnail-image {
+    max-height: 200px;
+  }
+}

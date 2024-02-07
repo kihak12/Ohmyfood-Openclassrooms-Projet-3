@@ -35,7 +35,7 @@
 }
 
 @mixin q-paddings {
-  $paddings: 10, 15, 30, 40, 50, 70;
+  $paddings: 10, 15, 30, 40, 50, 70, 100;
 
   @each $padding in $paddings {
     @include q-padding($padding);

@@ -1,0 +1,20 @@
+.section-steps {
+  @include q-gap;
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .card-info {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-steps {
+    justify-content: center;
+
+    & > .card-info {
+      max-width: 400px;
+    }
+  }
+}
