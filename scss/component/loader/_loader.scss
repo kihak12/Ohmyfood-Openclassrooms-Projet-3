@@ -60,13 +60,12 @@ $loader-icon-size: clamp(24px, 4vw, 50px) !default;
   }
   85% {
     right: calc(50% - ($loader-icon-size / 2));
-    scale: 1;
+    transform: rotateZ(504deg) scale(1.5);
     opacity: 1;
   }
   100% {
-    transform: rotateZ(600deg);
+    transform: rotateZ(720deg) scale(1.5);
     right: calc(50% - ($loader-icon-size / 2));
-    scale: 1.5;
     opacity: 0;
   }
 }
@@ -87,13 +86,12 @@ $loader-icon-size: clamp(24px, 4vw, 50px) !default;
   }
   85% {
     left: calc(50% - ($loader-icon-size / 2));
-    scale: 1;
+    transform: rotateZ(504deg) scale(1.5);
     opacity: 1;
   }
   100% {
-    transform: rotateZ(600deg);
+    transform: rotateZ(720deg) scale(1.5);
     left: calc(50% - ($loader-icon-size / 2));
-    scale: 1.5;
     opacity: 0;
   }
 }

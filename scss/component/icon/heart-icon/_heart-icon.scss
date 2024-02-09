@@ -7,7 +7,7 @@
   height: 100%;
   cursor: pointer;
   background-repeat: no-repeat;
-  transition: opacity .2s, scale .5s;
+  transition: opacity .2s, transform .5s;
 }
 
 .heart-icon {
@@ -23,23 +23,23 @@
     @include icon-properties;
     background-image: url('../images/icon/heart.svg');
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 
   &::after {
     @include icon-properties;
     background-image: url('../images/icon/heart-colored.svg');
     opacity: 0;
-    scale: 0;
+    transform: scale(0);
   }
 
   &:hover::after, &:active::after {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 
   &:hover::before, &:active::before{
     opacity: 0;
-    scale: 0;
+    transform: scale(0);
   }
 }
