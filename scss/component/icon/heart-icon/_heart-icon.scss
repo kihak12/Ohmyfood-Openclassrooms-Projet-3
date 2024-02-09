@@ -33,12 +33,22 @@
     transform: scale(0);
   }
 
-  &:hover::after, &:active::after {
+  &:hover::after {
     opacity: 1;
     transform: scale(1);
   }
 
-  &:hover::before, &:active::before{
+  &:hover::before {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &:checked::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &:checked::before{
     opacity: 0;
     transform: scale(0);
   }
