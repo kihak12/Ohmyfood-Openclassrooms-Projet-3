@@ -8,7 +8,6 @@ $loader-icon-size: clamp(24px, 4vw, 50px) !default;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.7);
 
-  -webkit-animation: fade 2.5s forwards linear;
   animation: fade 2.5s forwards linear;
   &::before, &::after {
     content: '';
