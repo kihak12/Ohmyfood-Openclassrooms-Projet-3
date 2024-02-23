@@ -15,17 +15,17 @@
   }
 }
 
-@mixin q-mobile-gap-sizes {
-  $gap-sizes: 5, 10, 17, 20, 30, 40;
+@mixin q-desktop-gap-sizes {
+  $gap-sizes: 5, 10, 12, 17, 20, 30, 40;
 
   @each $gap-size in $gap-sizes {
 
-    &.-mobile-gap#{$gap-size} {
+    &.-desktop-gap#{$gap-size} {
       gap: $gap-size * 1px;
     }
 
     @each $gap-height in $gap-sizes {
-      &.-mobile-gap#{$gap-size}-#{$gap-height} {
+      &.-desktop-gap#{$gap-size}-#{$gap-height} {
         gap: $gap-size * 1px $gap-height * 1px;
       }
     }
@@ -36,6 +36,6 @@
   @include q-gap-sizes;
 }
 
-@mixin q-mobile-gap {
-  @include q-mobile-gap-sizes;
+@mixin q-desktop-gap {
+  @include q-desktop-gap-sizes;
 }

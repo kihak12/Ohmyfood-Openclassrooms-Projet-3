@@ -1,5 +1,5 @@
 .thumbnail-image {
-  max-height: 350px;
+  max-height: 200px;
   img {
     width: 100%;
     height: auto;
@@ -7,8 +7,8 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .thumbnail-image {
-    max-height: 200px;
+    max-height: 350px;
   }
 }

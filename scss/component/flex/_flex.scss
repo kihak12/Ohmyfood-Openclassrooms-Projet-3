@@ -54,8 +54,8 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .flex {
-    @include q-mobile-gap;
+    @include q-desktop-gap;
   }
 }

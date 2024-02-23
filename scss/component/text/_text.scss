@@ -55,12 +55,8 @@
       background-color: $global-text-color-light-green;
     }
   }
-}
 
-@media (max-width: 768px) {
-  .text {
-    &.-mobile-centered {
-      text-align: center;
-    }
+  &.-center {
+    text-align: center;
   }
 }

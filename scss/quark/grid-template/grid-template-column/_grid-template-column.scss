@@ -4,6 +4,12 @@
   }
 }
 
+@mixin q-desktop-grid-template-column-size($size) {
+  &.-desktop-c#{$size} {
+    grid-template-columns: repeat($size, 1fr);
+  }
+}
+
 @mixin q-grid-template-column-sizes {
   $grid-template-column-sizes: 1, 2, 3;
 
@@ -12,6 +18,18 @@
   }
 }
 
+@mixin q-desktop-grid-template-column-sizes {
+  $grid-template-column-sizes: 1, 2, 3;
+
+  @each $grid-template-column-size in $grid-template-column-sizes {
+    @include q-desktop-grid-template-column-size($grid-template-column-size);
+  }
+}
+
 @mixin q-grid-template-column {
   @include q-grid-template-column-sizes;
+}
+
+@mixin q-desktop-grid-template-column {
+  @include q-desktop-grid-template-column-sizes;
 }

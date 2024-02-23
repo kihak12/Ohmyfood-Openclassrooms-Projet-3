@@ -9,7 +9,8 @@
   flex-wrap: nowrap;
 
   &:hover .card-menu-success, &:active .card-menu-success {
-    width: 59px;
+    width: 24%;
+    max-width: 59px;
     i {
       opacity: 1;
       transform: rotateZ(-360deg);
@@ -44,11 +45,10 @@
 }
 
 
-@media (max-width: 380px) {
+@media (min-width: 380px) {
   .-card-menu {
     &:hover .card-menu-success, &:active .card-menu-success {
-      width: 24%;
-      max-width: 59px;
+      width: 59px;
     }
   }
 }
